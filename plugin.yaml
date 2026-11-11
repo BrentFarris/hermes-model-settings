@@ -1,0 +1,11 @@
+name: hermes-model-settings
+version: 0.1.0
+description: Per-model temperature slider for custom Chat Completions models in Hermes Desktop.
+author: Brent Farris
+license: MIT
+manifest_version: 2
+api_version: 1
+requires_hermes: ">=0.23.1"
+provides_hooks: [pre_llm_call, on_session_end]
+provides_middleware: [llm_request]
+tags: [desktop, models, temperature]
